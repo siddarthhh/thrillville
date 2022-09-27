@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content=
+  "width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="style.css">
+ <title>ContactUs</title>
+ <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    ul {
+        list-style-type: none;
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(54, 51, 51);
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      .active {
+        background-color: skyblue;
+      }
+
+      .logo-image{
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -6px;
+
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+          <h1>thrillville theme park</h1>
+        
+        </header>
+        
+          <ul>
+              <li><a class="navbar-brand" href="home.html">
+                  <div class="logo-image">
+                        <img src="image" class="img-fluid">
+                  </div>
+            </a><li>
+              <li><a href="ticket.html">ticket price</a></li>
+              <li><a href="getting.html">getting to thrillville</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="dresscode.html">dresscode</a></li>
+              <li style="float: right"><a href="book.html">book now</a></li>
+            </ul>
+ <div id="ContactUs">
+  <h1>Contact Us</h1>
+  <form action="#">
+   <div class="form-shape">
+    <label for="query">
+     Type of Query
+    </label>
+    <select name="myQuery" id="query">
+     <option value="sel" selected>
+      Select
+     </option>
+     <option value="ord">
+      theme park related Issues
+     </option>
+     <option value="Site">
+      Site related Issues
+     </option>
+     <option value="fed">
+      Complaint related Issues
+     </option>
+     <option value="others">
+      Others
+     </option>
+    </select>
+   </div>
+   <div class="form-shape">
+    <label for="name">Name</label>
+    <input type="text" name="myName"
+     id="name"
+     placeholder="Enter your Name">
+   </div>
+   <div class="form-shape">
+    <label for="email">Email-Id</label>
+    <input type="email" name="myEmail"
+     id="email"
+     placeholder="Enter your email">
+   </div>
+   <div class="form-shape">
+    <label for="pho">Phone Number</label>
+    <input type="phone" name="myPhone"
+     id="pho"
+     placeholder="Enter your Phone no">
+   </div>
+   <div id="radio">
+    have you visited our theme park:
+    Yes <input type="radio" name="eligible">
+    No <input type="radio" name="eligible">
+   </div>
+   <div class="form-shape">
+    <label for="message">
+     Ellaborate your query
+    </label>
+    <textarea name="mesg" id="message"
+     cols="30" rows="10">
+    </textarea>
+   </div>
+   <input type="submit" value="Submit">
+   <input type="reset" value="Reset">
+  </form>
+ </div>
+</body>
+
+</html>

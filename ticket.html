@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        ul {
+            list-style-type: none;
+            position: -webkit-sticky; 
+            position: sticky;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(54, 51, 51);
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover:not(.active) {
+            background-color: #111;
+          }
+          
+          .active {
+            background-color: skyblue;
+          }
+
+          .logo-image{
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-top: -6px;
+
+        }
+        </style>
+</head>
+<body>
+  
+<header>
+    <h1>thrillville theme park</h1>
+  
+  </header>
+  
+    <ul>
+        <li><a class="navbar-brand" href="home.html">
+            <div class="logo-image">
+                  <img src="image" class="img-fluid">
+            </div>
+      </a><li>
+        <li><a href="ticket.html">ticket price</a></li>
+        <li><a href="getting.html">getting to thrillville</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="dresscode.html">dresscode</a></li>
+        <li style="float: right"><a href="book.html">book now</a></li>
+      </ul>
+      <table style="width:100%">
+        <tr>
+          <th>park entry</th>
+          <th>Charges</th>
+          
+        </tr>
+        <tr>
+          <td>Adult</td>
+          <td>Rs.1000/-</td>
+        </tr>
+        <tr>
+          <td>Child</td>
+          <td>Rs.750/-</td>
+        </tr>
+        <tr>
+            <td>College Student</td>
+            <td>Rs.750/-</td>
+          </tr>
+          <tr>
+            <td>School Student</td>
+            <td>Rs.650/-</td>
+          </tr>
+      </table>
+      
+</body>
+</html>
